@@ -10,7 +10,7 @@ using OfficeDevPnP.PartnerPack.Infrastructure.Jobs;
 
 namespace OfficeDevPnP.PartnerPack.SiteProvisioning.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [RoutePrefix("webapi")]    
     public class WebApiController : ApiController
     {
