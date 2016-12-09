@@ -195,6 +195,10 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -275,6 +279,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Components\LightGraphUser.cs" />
     <Compile Include="Components\MicrosoftGraphHelper.cs" />
     <Compile Include="Components\MSGraphAPIContext.cs" />
@@ -284,6 +289,7 @@
     <Compile Include="Components\SessionADALCache.cs" />
     <Compile Include="Components\SystemWebCookieManager.cs" />
     <Compile Include="Components\UserUtility.cs" />
+    <Compile Include="Controllers\WebApiController.cs" />
     <Compile Include="Controllers\GovernanceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
@@ -382,6 +388,10 @@
     <Content Include="Scripts\custom.principals.js" />
     <Content Include="Scripts\jquery-2.2.1.js" />
     <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <None Include="Properties\PublishProfiles\spikesofficedevtest - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\spikesofficedevtest - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\spikesofficedevtest - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\spikesofficedevtest - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
